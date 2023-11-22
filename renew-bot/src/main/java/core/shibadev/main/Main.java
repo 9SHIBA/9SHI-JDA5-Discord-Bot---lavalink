@@ -20,7 +20,7 @@ public class Main {
     public static final KmManger Manager = new KmManger("894495806948778036", PublicJDA);
 
     public static void main(String[] args) throws LoginException {
-        JDABuilder jda = JDABuilder.createDefault("ODk0NDk1ODA2OTQ4Nzc4MDM2.YVq2Iw.BDmoY6XnWwDXg07TNd9jgD2v6YA",GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_VOICE_STATES);
+        JDABuilder jda = JDABuilder.createDefault("",GatewayIntent.GUILD_MESSAGES, GatewayIntent.GUILD_VOICE_STATES);
         registry(jda);
         jda.setVoiceDispatchInterceptor(Manager.getVoiceInterceptor());
         PublicJDA = jda.build();
